@@ -1,0 +1,31 @@
+{
+  "version": "0.0.1",
+  "name": "uu5g05-snippets",
+  "displayName": "uu5 Snippets",
+  "icon": "images/icon.png",
+  "description": "This extension contains snippets for uu5 library.",
+  "publisher": "unicorn-universe",
+  "license": "License Commercial",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "uu5",
+    "uu5g05"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/uu5.code-snippets"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UnicornUniverse/uu5_vscode_snippets.git"
+  }
+}

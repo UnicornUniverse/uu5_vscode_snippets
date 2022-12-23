@@ -1,0 +1,38 @@
+{
+  "uu5 Visual Component": {
+    "prefix": "uu5VisualComponent",
+    "scope": "javascript,typescript",
+    "body": [
+      "//@@viewOn:imports",
+      "import { createVisualComponent, Utils } from \"uu5g05\";",
+      "import Config from \"./config/config.js\";",
+      "//@@viewOff:imports",
+      "",
+      "const ${1:${TM_FILENAME_BASE/([\\w]*)\\W?/${1:/pascalcase}/g}} = createVisualComponent({",
+      "  //@@viewOn:statics",
+      "  uu5Tag: Config.TAG + \"${1}\",",
+      "  //@@viewOff:statics",
+      "",
+      "  //@@viewOn:propTypes",
+      "  propTypes: {${2}},",
+      "  //@@viewOff:propTypes",
+      "",
+      "  //@@viewOn:defaultProps",
+      "  defaultProps: {${3}},",
+      "  //@@viewOff:defaultProps",
+      "",
+      "  render(props) {",
+      "\t//@@viewOn:render",
+      "\t${0}",
+      "\t//@@viewOff:render",
+      "  },",
+      "});",
+      "",
+      "//@@viewOn:exports",
+      "export { ${1} };",
+      "export default ${1};",
+      "//@@viewOff:exports",
+      ""
+    ]
+  }
+}
