@@ -5,7 +5,7 @@
   "icon": "images/icon.png",
   "description": "This extension contains snippets for uu5 library.",
   "publisher": "unicorn-universe",
-  "license": "License Commercial",
+  "license": "SEE LICENSE IN LICENSE.txt",
   "engines": {
     "vscode": "^1.74.0"
   },
