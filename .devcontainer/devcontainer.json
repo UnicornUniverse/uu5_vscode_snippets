@@ -5,10 +5,11 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint",
-        "DavidAnson.vscode-markdownlint"
-      ]
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint",
+		"DavidAnson.vscode-markdownlint",
+		"mhutchie.git-graph"
+	]
     }
   }
 }
