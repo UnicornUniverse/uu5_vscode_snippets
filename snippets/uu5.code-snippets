@@ -1,4 +1,101 @@
 {
+  "uu5 Brick": {
+    "prefix": "uu5Brick",
+    "scope": "javascript,typescript",
+    "body": [
+      "//@@viewOn:imports",
+      "import { ${1:${TM_DIRECTORY/.*?(\\w*)$/${1:/pascalcase}/}} } from \"${WORKSPACE_NAME}${2}\";",
+      "import { withErrorBoundary } from \"uu_plus4u5g02-elements\";",
+      "import { withEditMode, withMargin } from \"uu5g05-editing\";",
+      "import EditModal from \"./${3:$TM_FILENAME_BASE}/edit-modal\";",
+      "//@@viewOff:imports",
+      "",
+      "let ${4:${TM_FILENAME_BASE/([\\w]*)\\W?/${1:/pascalcase}/g}} = ${1}.${4};",
+      "${4} = withMargin(${4});",
+      "${4} = withEditMode(${4}, EditModal);",
+      "${4} = withErrorBoundary(${4});",
+      "",
+      "//@@viewOn:exports",
+      "export { ${4} };",
+      "export default ${4};",
+      "//@@viewOff:exports",
+      ""
+    ]
+  },
+  "uu5 Call": {
+    "prefix": "uu5Call",
+    "scope": "javascript,typescript",
+    "body": [
+      "${1:name}(dtoIn, baseUri) {",
+      "  let commandUri = Calls.getCommandUri(\"${2:entity/command}\", baseUri);",
+      "  return Calls.call(\"${3|get,post|}\", commandUri, dtoIn);",
+      "},${0}"
+    ]
+  },
+  "uu5 Context": {
+    "prefix": "uu5Context",
+    "scope": "javascript,typescript",
+    "body": [
+      "//@@viewOn:imports",
+      "import { Utils } from \"uu5g05\";",
+      "//@@viewOff:imports",
+      "",
+      "export const [Context, use${1:${TM_DIRECTORY/.*?(\\w*)$/${1:/pascalcase}/}}] = Utils.Context.create();",
+      "export default Context;",
+      ""
+    ]
+  },
+  "uu5 Css Function": {
+    "prefix": "uu5CssFunction",
+    "scope": "javascript,typescript",
+    "body": ["${1:name}: (${2}) => Config.Css.css({${3}}),${0}"]
+  },
+  "uu5 Css Section": {
+    "prefix": "uu5CssSection",
+    "scope": "javascript,typescript",
+    "body": [
+      "//@@viewOn:css",
+      "const Css = {",
+      "  ${1:main}: (${2}) => Config.Css.css({${3}}),${0}",
+      "};",
+      "//@@viewOff:css"
+    ]
+  },
+  "uu5 Get Attrs": {
+    "prefix": "uu5GetAttrs",
+    "scope": "javascript,typescript",
+    "body": [
+      "const attrs = Utils.VisualComponent.getAttrs(props${1:, className});${0}"
+    ]
+  },
+  "uu5 Log Error": {
+    "prefix": "uu5LogError",
+    "scope": "javascript,typescript",
+    "body": [
+      "${TM_FILENAME_BASE/([\\w]*)\\W?/${1:/pascalcase}/g}.logger.error(`${1:message}`, ${2:error});"
+    ]
+  },
+  "uu5 Log Debug": {
+    "prefix": "uu5LogDebug",
+    "scope": "javascript,typescript",
+    "body": [
+      "${TM_FILENAME_BASE/([\\w]*)\\W?/${1:/pascalcase}/g}.logger.debug(${1:message});"
+    ]
+  },
+  "uu5 Log Info": {
+    "prefix": "uu5LogInfo",
+    "scope": "javascript,typescript",
+    "body": [
+      "${TM_FILENAME_BASE/([\\w]*)\\W?/${1:/pascalcase}/g}.logger.info(${1:message});"
+    ]
+  },
+  "uu5 Log Warning": {
+    "prefix": "uu5LogWarning",
+    "scope": "javascript,typescript",
+    "body": [
+      "${TM_FILENAME_BASE/([\\w]*)\\W?/${1:/pascalcase}/g}.logger.warning(${1:message});"
+    ]
+  },
   "uu5 Visual Component": {
     "prefix": "uu5VisualComponent",
     "scope": "javascript,typescript",
