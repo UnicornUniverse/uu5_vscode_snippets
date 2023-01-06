@@ -68,6 +68,43 @@
       "const attrs = Utils.VisualComponent.getAttrs(props${1:, className});${0}"
     ]
   },
+  "uu5 Hoc": {
+    "prefix": "uu5Hoc",
+    "scope": "javascript,typescript",
+    "body": [
+      "//@@viewOn:imports",
+      "import { createComponent } from \"uu5g05\";",
+      "//@@viewOff:imports",
+      "",
+      "export function ${1:${TM_FILENAME_BASE/[\\W]([\\w]*)/${1:/pascalcase}/g}}(Component) {",
+      "  return createComponent({",
+      "    //@@viewOn:statics",
+      "    uu5Tag: `${1}(${Component.uu5Tag})`,",
+      "    //@@viewOff:statics",
+      "",
+      "    //@@viewOn:propTypes",
+      "    propTypes: { ...Component.propTypes${2} },",
+      "    //@@viewOff:propTypes",
+      "",
+      "    //@@viewOn:defaultProps",
+      "    defaultProps: { ...Component.defaultProps${3} },",
+      "    //@@viewOff:defaultProps",
+      "",
+      "    //@@viewOn:render",
+      "    render(props) {",
+      "      ${0}",
+      "    },",
+      "    //@@viewOff:render",
+      "  });",
+      "}",
+      "",
+      "//@@viewOn:exports",
+      "export { ${1} };",
+      "export default ${1};",
+      "//@@viewOff:exports",
+      ""
+    ]
+  },
   "uu5 Log Error": {
     "prefix": "uu5LogError",
     "scope": "javascript,typescript",

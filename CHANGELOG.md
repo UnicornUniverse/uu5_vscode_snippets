@@ -6,11 +6,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-## [0.0.1] - 2022-12-23
-
 ### Added
 
-- Snippet uu5VisualComponent
+- Snippet uu5HoC
 
 ## [1.0.0] - 2023-01-03
 
@@ -25,3 +23,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Snippet uu5LogDebug
 - Snippet uu5LogInfo
 - Snippet uu5LogWarning
+
+## [0.0.1] - 2022-12-23
+
+### Added
+
+- Snippet uu5VisualComponent
