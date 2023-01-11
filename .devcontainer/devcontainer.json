@@ -5,11 +5,12 @@
   "customizations": {
     "vscode": {
       "extensions": [
-		"esbenp.prettier-vscode",
-		"dbaeumer.vscode-eslint",
-		"DavidAnson.vscode-markdownlint",
-		"mhutchie.git-graph"
-	]
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "DavidAnson.vscode-markdownlint",
+        "mhutchie.git-graph",
+        "dakara.transformer"
+      ]
     }
   }
 }
