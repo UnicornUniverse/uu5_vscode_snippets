@@ -65,7 +65,7 @@
     "prefix": "uu5GetAttrs",
     "scope": "javascript,typescript",
     "body": [
-      "const attrs = Utils.VisualComponent.getAttrs(props${1:, className});${0}"
+      "const attrs = Utils.VisualComponent.getAttrs(props${1:, Css.main(${3})});${0}"
     ]
   },
   "uu5 Hoc": {
@@ -131,6 +131,13 @@
     "scope": "javascript,typescript",
     "body": [
       "${TM_FILENAME_BASE/([\\w]*)\\W?/${1:/pascalcase}/g}.logger.warning(${1:message});"
+    ]
+  },
+  "uu5 Split Props": {
+    "prefix": "uu5SplitProps",
+    "scope": "javascript,typescript",
+    "body": [
+      "const { elementProps${1:, componentProps} } = Utils.VisualComponent.splitProps(props${2:, Css.main(${3})});${0}"
     ]
   },
   "uu5 Visual Component": {

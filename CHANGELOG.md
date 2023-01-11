@@ -9,6 +9,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Added
 
 - Snippet uu5HoC
+- Snippet uu5SplitProps
 
 ## [1.0.0] - 2023-01-03
 
