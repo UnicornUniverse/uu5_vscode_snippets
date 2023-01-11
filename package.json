@@ -27,5 +27,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/UnicornUniverse/uu5_vscode_snippets.git"
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
   }
 }

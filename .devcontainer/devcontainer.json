@@ -1,7 +1,7 @@
 {
   "name": "uu5_vscode_snippets",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
-  "postCreateCommand": "sudo chown node:node -R ./",
+  "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
   "customizations": {
     "vscode": {
       "extensions": [
